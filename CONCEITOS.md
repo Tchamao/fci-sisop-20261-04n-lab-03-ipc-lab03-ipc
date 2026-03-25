@@ -271,7 +271,7 @@ static volatile sig_atomic_t sinal_recebido = 0;
 
 void handler_usr1(int sig) {
     (void)sig;           /* silencia warning — não vamos usar o número */
-    sinal_recebido = 1;  /* só isso — nada mais é seguro aqui */
+z    sinal_recebido = 1;  /* só isso — nada mais é seguro aqui */
 }
 
 /* registro: conecta SIGUSR1 a handler_usr1 */

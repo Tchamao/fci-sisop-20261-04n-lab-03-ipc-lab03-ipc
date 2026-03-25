@@ -57,7 +57,7 @@ ssize_t write(int fd, const void *buf, size_t count);
 ```
 
 **Padrão de uso com fork():**
-1. Pai chama `pipe(fd)` antes do `fork()`
+zzz1. Pai chama `pipe(fd)` antes do `fork()`
 2. Após o fork, cada processo fecha o descritor que não usa
 3. Escritor fecha `fd[0]`, leitor fecha `fd[1]`
 
